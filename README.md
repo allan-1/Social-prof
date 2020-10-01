@@ -1,1 +1,1 @@
-A simple social profile
+A simple social profile website
