@@ -1,9 +1,12 @@
-*{
+*, *::before, *::after{
+    box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+	                  url(images/bg-pattern-bottom-desktop.svg);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
 }
 img{
     border-radius: 100%;
@@ -18,14 +21,14 @@ img{
 }
 .profile{
     background-color: hsl(300, 43%, 22%);
-    color: #fff;
+    color: hsl(300, 24%, 96%);
     border-radius: 7px;
     padding: 25px;
     margin: 0 15px;
     position: relative;
 }
 .rating{
-    background-color: hsl(303, 10%, 53%);
+    background-color: hsl(300, 24%, 96%);
     margin: 15px 10px;
     font-weight: 600;
     font-size: 13px;
@@ -53,7 +56,7 @@ img{
     word-spacing: 3px;
 }
 .intro p{
-    color: #b8bbb8f6;
+    color: hsl(303, 10%, 53%);
     font-weight: 500;
 }
 .name{
@@ -82,6 +85,10 @@ img{
 @media(max-width: 900px){
     *{
         font-size: small;
+    }
+    body{
+       	background-image: url(../images/bg-pattern-top-mobile.svg),
+	                  url(../images/bg-pattern-bottom-mobile.svg);
     }
     .top{
         margin: 0;
